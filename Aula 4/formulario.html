@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>Formulários</h2>
+        <form action="cadastro.php" method="post">
+            <p><label>Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        </p>
+        <p><label>Senha:</label>
+            <input type="password" name="senha" required maxlength="8" minlength="8">
+            </p>
+
+         <p><label>Telefone:</label>
+            <input type="text" name="telefone" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}"
+            placeholder="(99)99999-9999" required tittle="Use o formato: (99) 99999-9999"
+
+         <p><label>Email:</label>
+            <input type="email" name="email" required>
+        
+        <p><label>Cep:</label>
+            <input type="text" name="cep" required maxlength="8" minlength="8">
+
+        <p><label>Sobre você:</label>
+            <textarea name="bio" rows="10" cols="100"></textarea>
+        <p><label>Gênero:</label>
+            <input type="radio" name="genero" value="masculino" required>
+            <label>Masculino</label>
+            <input type="radio" name="genero" value="feminino" required>
+            <label>Feminino</label>
+            <input type="radio" name="genero" value="outro" required>
+            <label>Outro</label>
+        </p>
+        <p><label>interesses:</label>
+             <input type="checkbox" name="interesses" value="tecnologia" required>
+             <input type="checkbox" name="interesses" value="esportes" required>
+            <input type="checkbox" name="interesses" value="artes" required>
+
+            
+        </select>
+        </p>
+        <p><label>Foto de perfil:</label>
+            <input type="file" name="foto">
+        </p>
+    </form>
+    </section>
+    </body>
+
+
+    <input type="submit" value="Enviar">
+     <input type="reset" value="Limpar">
+    </form>
